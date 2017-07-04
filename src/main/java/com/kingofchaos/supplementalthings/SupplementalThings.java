@@ -5,7 +5,6 @@ import com.kingofchaos.supplementalthings.creativetab.CreativeTabSupplementalThi
 import com.kingofchaos.supplementalthings.init.ModBlocks;
 import com.kingofchaos.supplementalthings.init.ModItems;
 import com.kingofchaos.supplementalthings.proxy.CommonProxy;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
