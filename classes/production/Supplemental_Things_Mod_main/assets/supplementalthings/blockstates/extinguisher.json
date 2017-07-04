@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "supplementalthings:FireExtinguisher"
+    },
+    "inventory": {
+      "model": "supplementalthings:FireExtinguisher",
+      "transform": "forge:default-block"
+    }
+  }
+}

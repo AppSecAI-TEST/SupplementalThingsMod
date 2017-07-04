@@ -1,0 +1,32 @@
+{
+  "forge_marker": 1,
+    "variants": {
+      "normal": {
+        "model": "miscblocks2:Exit"
+      },
+      "inventory": {
+        "model": "miscblocks2:Exit"
+      },
+      "facing": {
+        "north": {
+          "model": "miscblocks2:Exit"
+        },
+        "south": {
+          "model": "miscblocks2:Exit",
+          "y": 180
+        },
+        "west": {
+          "model": "miscblocks2:Exit",
+          "y": 270
+        },
+        "east": {
+          "model": "miscblocks2:Exit",
+          "y": 90
+        }
+      }
+    },
+    "inventory": {
+      "model": "miscblocks2:Exit",
+      "transform": "forge:default-block"
+    }
+  }
