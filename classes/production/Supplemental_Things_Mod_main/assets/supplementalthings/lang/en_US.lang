@@ -8,6 +8,7 @@ tile.exit.name=Exit Sign
 tile.cone.name=Cone
 tile.model.name=Checkered Block
 tile.totalblack.name=Total Black Block
+tile.extinguisher.name=Fire Extinguisher
 
 #Creative Tabs
 itemGroup.miscblocks2=Misc Blocks 2
