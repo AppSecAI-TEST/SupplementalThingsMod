@@ -5,7 +5,8 @@
         "model": "supplementalthings:Exit"
       },
       "inventory": {
-        "model": "supplementalthings:Exit"
+        "model": "supplementalthings:Exit",
+        "transform": "forge:default-block"
       },
       "facing": {
         "north": {
@@ -24,9 +25,5 @@
           "y": 90
         }
       }
-    },
-    "inventory": {
-      "model": "supplementalthings:Exit",
-      "transform": "forge:default-block"
     }
   }

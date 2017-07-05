@@ -1,80 +1,70 @@
 package com.kingofchaos.supplementalthings.blocks;
 
 import com.kingofchaos.supplementalthings.SupplementalThings;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockExit extends BlockSupplementalThingsMain
-{
-    private static double a;
-    private static double NSX1WZ1;
-    private static double SY1;
-    private static double NZ1WX1;
-    private static double NSX2WZ2;
-    private static double SY2;
-    private static double NZ2WX2;
-    private static double SZ1;
-    private static double SZ2;
-    private static double EX1;
-    private static double EZ1;
-    private static double EX2;
-    private static double EZ2;
-    //private static final AxisAlignedBB NORTH_BOX;
-    //private static final AxisAlignedBB SOUTH_BOX;
-    //private static final AxisAlignedBB WEST_BOX;
-    //private static final AxisAlignedBB EAST_BOX;
+public class BlockExit extends BlockSupplementalThingsMain {
+
+    private static double NSX1WZ1 = 13.0D;
+    private static double Y1 = 0.0D;
+    private static double NZ1WX1 = 0.0D;
+    private static double NSX2WZ2 = 3.0D;
+    private static double Y2 = 7.0D;
+    private static double NZ2WX2 = 2.0D;
+    private static double SZ1 = 16.0D - NZ2WX2;
+    private static double SZ2 = 16.0D - NZ1WX1;
+    private static double EX1 = 16.0D - NZ2WX2;
+    private static double EZ1 = 16.0D - NSX2WZ2;
+    private static double EX2 = 16.0D - NZ1WX1;
+    private static double EZ2 = 16.0D - NSX1WZ1;
+
+    private static final AxisAlignedBB NORTH_BOX = new AxisAlignedBB(PixelSize * NSX1WZ1, PixelSize * Y1, PixelSize * NZ1WX1, PixelSize * NSX2WZ2, PixelSize * Y2, PixelSize * NZ2WX2);
+    private static final AxisAlignedBB SOUTH_BOX = new AxisAlignedBB(PixelSize * NSX1WZ1, PixelSize * Y1, PixelSize * SZ1, PixelSize * NSX2WZ2, PixelSize * Y2, PixelSize * SZ2);
+    private static final AxisAlignedBB WEST_BOX = new AxisAlignedBB(PixelSize * NZ1WX1, PixelSize * Y1, PixelSize * NSX1WZ1, PixelSize * NZ2WX2, PixelSize * Y2, PixelSize * NSX2WZ2);
+    private static final AxisAlignedBB EAST_BOX = new AxisAlignedBB(PixelSize * EX1, PixelSize * Y1, PixelSize * EZ1, PixelSize * EX2, PixelSize * Y2, PixelSize * EZ2);
 
     public BlockExit(String name) {
         super(Material.ROCK, name);
     }
-/*
 
     public void registerItemModel(ItemBlock itemBlock) {
         SupplementalThings.proxy.registerItemRenderer(itemBlock, 0, this.name);
     }
 
-    public void func_180633_a(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack stack) {
-        EnumFacing entityFacing = entity.func_174811_aO();
-        if(!world.field_72995_K) {
-            if(entityFacing == EnumFacing.NORTH) {
-                entityFacing = EnumFacing.NORTH;
-            } else if(entityFacing == EnumFacing.SOUTH) {
-                entityFacing = EnumFacing.SOUTH;
-            } else if(entityFacing == EnumFacing.EAST) {
-                entityFacing = EnumFacing.EAST;
-            } else if(entityFacing == EnumFacing.WEST) {
-                entityFacing = EnumFacing.WEST;
-            }
-
-            world.func_180501_a(pos, state.func_177226_a(FACING, entityFacing), 2);
-        }
-
-    }
-
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
-        switch ((EnumFacing)state.getValue(FACING))
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        switch (state.getValue(FACING))
         {
             case EAST:
-                return TORCH_EAST_AABB;
+                return EAST_BOX;
             case WEST:
-                return TORCH_WEST_AABB;
+                return WEST_BOX;
             case SOUTH:
-                return TORCH_SOUTH_AABB;
+                return SOUTH_BOX;
             case NORTH:
-                return TORCH_NORTH_AABB;
+                return NORTH_BOX;
             default:
-                return STANDING_AABB;
+                return NORTH_BOX;
         }
     }
-    */
+
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
 
 }
