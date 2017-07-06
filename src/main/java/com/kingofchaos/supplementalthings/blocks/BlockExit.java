@@ -18,7 +18,9 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockExit extends BlockSupplementalThingsMain {
+import static com.kingofchaos.supplementalthings.blocks.BlockCustomModelBase.PixelSize;
+
+public class BlockExit extends BlockCustomModelBase {
 
     private static double NSX1WZ1 = 13.0D;
     private static double Y1 = 0.0D;
@@ -40,6 +42,7 @@ public class BlockExit extends BlockSupplementalThingsMain {
 
     public BlockExit(String name) {
         super(Material.ROCK, name);
+        setLightLevel(5.0F);
     }
 
     public void registerItemModel(ItemBlock itemBlock) {
@@ -61,10 +64,4 @@ public class BlockExit extends BlockSupplementalThingsMain {
                 return NORTH_BOX;
         }
     }
-
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
-
 }

@@ -6,7 +6,9 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockExtinguisher extends BlockSupplementalThingsMain
+import static com.kingofchaos.supplementalthings.blocks.BlockCustomModelBase.PixelSize;
+
+public class BlockExtinguisher extends BlockCustomModelBase
 {
     private static double NSX1WZ1 = 13.0D;
     private static double Y1 = 0.0D;
@@ -46,8 +48,4 @@ public class BlockExtinguisher extends BlockSupplementalThingsMain
         }
     }
 
-    public boolean isFullCube(IBlockState state)
-    {
-        return false;
-    }
 }
