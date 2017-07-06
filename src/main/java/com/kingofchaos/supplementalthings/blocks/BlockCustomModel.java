@@ -1,31 +1,30 @@
 package com.kingofchaos.supplementalthings.blocks;
 
-import com.kingofchaos.supplementalthings.SupplementalThings;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class BlockCustomModelBase extends BlockSupplementalThingsMain {
+public class BlockCustomModel extends BlockSupplementalThingsMain
+{
 
     public static double PixelSize = 0.0625D;
-
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
-    public BlockCustomModelBase(Material material, String name) {
+    public BlockCustomModel(Material material, String name) {
         super(material, name);
     }
 
-    public void registerItemModel(ItemBlock itemBlock) {
-        SupplementalThings.proxy.registerItemRenderer(itemBlock, 0, this.name);
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
     }
 
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state) {
@@ -90,14 +89,8 @@ public class BlockCustomModelBase extends BlockSupplementalThingsMain {
         return new BlockStateContainer(this, FACING);
     }
 
-    public boolean isOpaqueCube(IBlockState state)
-    {
-        return false;
-    }
-
     public boolean isFullCube(IBlockState state)
     {
         return false;
     }
-
 }

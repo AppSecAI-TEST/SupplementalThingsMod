@@ -29,4 +29,7 @@ public class BlockSupplementalThingsMain extends Block
         this.setUnlocalizedName(name);
     }
 
+    public void registerItemModel(ItemBlock itemBlock) {
+        SupplementalThings.proxy.registerItemRenderer(itemBlock, 0, this.name);
+    }
 }

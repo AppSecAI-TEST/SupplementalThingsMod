@@ -18,9 +18,9 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import static com.kingofchaos.supplementalthings.blocks.BlockCustomModelBase.PixelSize;
+import static com.kingofchaos.supplementalthings.blocks.BlockCustomModel.PixelSize;
 
-public class BlockExit extends BlockCustomModelBase {
+public class BlockExit extends BlockCustomModel {
 
     private static double NSX1WZ1 = 13.0D;
     private static double Y1 = 0.0D;
@@ -42,7 +42,7 @@ public class BlockExit extends BlockCustomModelBase {
 
     public BlockExit(String name) {
         super(Material.ROCK, name);
-        setLightLevel(5.0F);
+        setLightLevel(10.0F);
     }
 
     public void registerItemModel(ItemBlock itemBlock) {
@@ -64,4 +64,5 @@ public class BlockExit extends BlockCustomModelBase {
                 return NORTH_BOX;
         }
     }
+
 }
