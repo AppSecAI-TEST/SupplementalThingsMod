@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 public class CreativeTabSupplementalThings extends CreativeTabs
 {
     public CreativeTabSupplementalThings() {
-        super("miscblocks2");
+        super("supplementalthings");
     }
 
     @Override
