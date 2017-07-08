@@ -1,6 +1,7 @@
 
 package com.kingofchaos.supplementalthings;
 
+import com.kingofchaos.supplementalthings.command.CommandFly;
 import com.kingofchaos.supplementalthings.command.CommandGod;
 import com.kingofchaos.supplementalthings.creativetab.CreativeTabSupplementalThings;
 import com.kingofchaos.supplementalthings.init.ModBlocks;
@@ -47,6 +48,7 @@ public class SupplementalThings {
     @EventHandler
     public void serverLoad(FMLServerStartingEvent event) {
         event.registerServerCommand(new CommandGod());
+        event.registerServerCommand(new CommandFly());
     }
 
 }

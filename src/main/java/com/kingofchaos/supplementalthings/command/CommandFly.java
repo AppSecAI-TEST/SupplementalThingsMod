@@ -13,10 +13,10 @@ import net.minecraft.util.text.TextComponentString;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class CommandGod extends CommandBase {
+public class CommandFly extends CommandBase {
 
-    public CommandGod(){
-        aliases = Lists.newArrayList(SupplementalThings.modid, "God", "god");
+    public CommandFly(){
+        aliases = Lists.newArrayList(SupplementalThings.modid, "Fly", "fly");
     }
 
     private final List<String> aliases;
@@ -24,13 +24,13 @@ public class CommandGod extends CommandBase {
     @Override
     @Nonnull
     public String getCommandName() {
-        return "god";
+        return "fly";
     }
 
     @Override
     @Nonnull
     public String getCommandUsage(@Nonnull ICommandSender sender) {
-        return "/god - Makes you invincible";
+        return "/fly  - Gives you flight";
     }
 
     @Override
@@ -44,17 +44,17 @@ public class CommandGod extends CommandBase {
 
         if (sender instanceof EntityPlayer) {
 
-            if (CommandHelper.isInvincible((EntityPlayer) sender,true))
+            if (CommandHelper.isFlyEnabled((EntityPlayer) sender,true))
             {
-                sender.addChatMessage(new TextComponentString("Your invincibility has been turned off"));
-                CommandHelper.setInvincible((EntityPlayer) sender, false);
+                sender.addChatMessage(new TextComponentString("Your fly has been turned off"));
+                CommandHelper.setFly((EntityPlayer) sender, false);
             }
 
             else
-                {
-                    sender.addChatMessage(new TextComponentString("Your invincibility has been turned on"));
-                    CommandHelper.setInvincible((EntityPlayer) sender, true);
-                }
+            {
+                sender.addChatMessage(new TextComponentString("Your fly has been turned on"));
+                CommandHelper.setFly((EntityPlayer) sender, true);
+            }
         }
     }
 
