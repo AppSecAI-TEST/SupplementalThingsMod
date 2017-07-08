@@ -6,7 +6,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockExtinguisher extends BlockCustomModel
+public class BlockExtinguisher extends BlockDirection
 {
     private static double NSX1WZ1 = 13.0D;
     private static double Y1 = 0.0D;

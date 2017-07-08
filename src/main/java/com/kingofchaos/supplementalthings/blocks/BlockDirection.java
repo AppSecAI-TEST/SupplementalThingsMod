@@ -12,13 +12,13 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class BlockCustomModel extends BlockSupplementalThingsMain
+public class BlockDirection extends BlockSupplementalThingsMain
 {
 
     public static double PixelSize = 0.0625D;
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
-    public BlockCustomModel(Material material, String name) {
+    public BlockDirection(Material material, String name) {
         super(material, name);
     }
 
