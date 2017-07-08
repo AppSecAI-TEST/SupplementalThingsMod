@@ -16,8 +16,6 @@ import java.util.List;
 
 public class CommandGod extends CommandBase {
 
-    public EntityPlayerSP thePlayer;
-    public InvincibleHelper invincible;
     public CommandGod(){
         aliases = Lists.newArrayList(SupplementalThings.modid, "God", "god");
     }
@@ -59,7 +57,6 @@ public class CommandGod extends CommandBase {
                     InvincibleHelper.setInvincible((EntityPlayer) sender, true);
                 }
         }
-
     }
 
     @Override
