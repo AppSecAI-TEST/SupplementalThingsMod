@@ -1,0 +1,17 @@
+#Items
+item.test.name=Test Item
+
+#Blocks
+tile.testblock.name=Test Block
+tile.xblock.name=X-Block
+tile.exit.name=Exit Sign
+tile.cone.name=Cone
+tile.model.name=Checkered Block
+tile.totalblack.name=Total Black Block
+tile.extinguisher.name=Fire Extinguisher
+tile.road.name=Road
+tile.cement.name=Cement
+tile.road.dashedwhite.name:1=Dashed White Line Road
+
+#Creative Tabs
+itemGroup.supplementalthings=Supplemental Things

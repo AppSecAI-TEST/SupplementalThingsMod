@@ -1,6 +1,7 @@
 
 package com.kingofchaos.supplementalthings;
 
+import com.kingofchaos.supplementalthings.blocks.BlockRoad;
 import com.kingofchaos.supplementalthings.command.CommandFly;
 import com.kingofchaos.supplementalthings.command.CommandGod;
 import com.kingofchaos.supplementalthings.creativetab.CreativeTabSupplementalThings;
@@ -33,6 +34,7 @@ public class SupplementalThings {
         System.out.println("Supplemental Things is in the preinit phase!");
         ModItems.init();
         ModBlocks.init();
+        BlockRoad.init();
     }
 
     @EventHandler

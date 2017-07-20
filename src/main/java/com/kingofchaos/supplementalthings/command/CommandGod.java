@@ -8,15 +8,18 @@ import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.Collections;
 import java.util.List;
 
 public class CommandGod extends CommandBase {
 
     public CommandGod(){
-        aliases = Lists.newArrayList(SupplementalThings.modid, "God", "god");
+        aliases = Lists.newArrayList(SupplementalThings.modid, "god");
     }
 
     private final List<String> aliases;
@@ -68,4 +71,9 @@ public class CommandGod extends CommandBase {
         return 2;
     }
 
+    @Override
+    @Nonnull
+    public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos) {
+        return Collections.emptyList();
+    }
 }

@@ -1,6 +1,7 @@
 package com.kingofchaos.supplementalthings.init;
 
 import com.kingofchaos.supplementalthings.blocks.*;
+import com.kingofchaos.supplementalthings.items.ItemBlockRoad;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -16,6 +17,7 @@ public class ModBlocks
     public static BlockRoad road;
     public static BlockExtinguisher extinguisher;
     public static BlockCement cement;
+    public static ItemBlockRoad itemBlockRoad;
 
     public ModBlocks() {
     }
@@ -27,7 +29,6 @@ public class ModBlocks
         cone = register(new BlockCone("cone"));
         model = register(new BlockBaseBlocks("model"));
         totalblack = register(new BlockBaseBlocks("totalblack"));
-        road = register(new BlockRoad("road"));
         extinguisher = register(new BlockExtinguisher("extinguisher"));
         cement = register(new BlockCement("cement"));
     }
@@ -49,10 +50,6 @@ public class ModBlocks
 
         if(block instanceof BlockExtinguisher) {
             ((BlockExtinguisher)block).registerItemModel(itemBlock);
-        }
-
-        if(block instanceof BlockRoad) {
-            ((BlockRoad)block).registerItemModel(itemBlock);
         }
 
         return block;

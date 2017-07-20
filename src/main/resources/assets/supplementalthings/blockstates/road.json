@@ -1,16 +1,29 @@
 {
   "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "all": "supplementalthings:blocks/Road"
-    }
-  },
   "variants": {
     "normal": {
-      "model": "cube_all"
+      "model": "supplementalthings:Road"
     },
     "inventory": {
-      "model": "cube_all"
+      "model": "supplementalthings:Road",
+      "transform": "forge:default-block"
+    },
+    "facing": {
+      "north": {
+        "model": "supplementalthings:Road"
+      },
+      "south": {
+        "model": "supplementalthings:Road",
+        "y": 180
+      },
+      "west": {
+        "model": "supplementalthings:Road",
+        "y": 270
+      },
+      "east": {
+        "model": "supplementalthings:Road",
+        "y": 90
+      }
     }
   }
 }
