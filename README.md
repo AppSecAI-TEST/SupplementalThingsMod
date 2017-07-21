@@ -1,5 +1,5 @@
 # SupplementalThingsMod
-More blocks and items to supplement the existing objects!
+More blocks, items, and commands to supplement the existing things!
 
 This is also a project for me to learn Java and I'm learning minecraft modding from some tutorials so don't expect high quality code.
 
