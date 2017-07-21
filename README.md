@@ -8,3 +8,5 @@ This is also a project for me to learn Java and I'm learning minecraft modding f
 -McJty's modding tutorials: https://wiki.mcjty.eu/modding/index.php/Main_Page
 
 -TheGreyGhost's example repository: https://github.com/TheGreyGhost/MinecraftByExample/tree/1-10-2final
+
+-Shadowfact's modding tutorial: https://shadowfacts.net/tutorials/forge-modding-1102/
