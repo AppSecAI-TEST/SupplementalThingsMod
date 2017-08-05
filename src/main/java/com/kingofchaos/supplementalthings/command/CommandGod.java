@@ -46,18 +46,19 @@ public class CommandGod extends CommandBase {
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
 
         if (sender instanceof EntityPlayer) {
-
-            if (CommandHelper.isInvincible((EntityPlayer) sender,true))
-            {
-                sender.addChatMessage(new TextComponentString("Your invincibility has been turned off"));
-                CommandHelper.setInvincible((EntityPlayer) sender, false);
-            }
-
-            else
-                {
+            if(!((EntityPlayer) sender).capabilities.isCreativeMode && !((EntityPlayer) sender).isSpectator()) {
+                if (CommandHelper.isInvincible((EntityPlayer) sender, true)) {
+                    sender.addChatMessage(new TextComponentString("Your invincibility has been turned off"));
+                    CommandHelper.setInvincible((EntityPlayer) sender, false);
+                } else {
                     sender.addChatMessage(new TextComponentString("Your invincibility has been turned on"));
                     CommandHelper.setInvincible((EntityPlayer) sender, true);
                 }
+            }
+            else
+            {
+                sender.addChatMessage(new TextComponentString("This command is for survival and adventure mode only"));
+            }
         }
     }
 

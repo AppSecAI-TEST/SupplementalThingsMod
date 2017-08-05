@@ -46,18 +46,19 @@ public class CommandFly extends CommandBase {
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
 
         if (sender instanceof EntityPlayer) {
-
-            if (CommandHelper.isFlyEnabled((EntityPlayer) sender,true))
-            {
-                sender.addChatMessage(new TextComponentString("Your fly has been turned off"));
-                CommandHelper.setFly((EntityPlayer) sender, false);
+            if(!((EntityPlayer) sender).capabilities.isCreativeMode && !((EntityPlayer) sender).isSpectator()) {
+                if (CommandHelper.isFlyEnabled((EntityPlayer) sender, true)) {
+                    sender.addChatMessage(new TextComponentString("Your fly has been turned off"));
+                    CommandHelper.setFly((EntityPlayer) sender, false);
+                } else {
+                    sender.addChatMessage(new TextComponentString("Your fly has been turned on"));
+                    CommandHelper.setFly((EntityPlayer) sender, true);
+                }
             }
-
             else
-            {
-                sender.addChatMessage(new TextComponentString("Your fly has been turned on"));
-                CommandHelper.setFly((EntityPlayer) sender, true);
-            }
+                {
+                    sender.addChatMessage(new TextComponentString("This command is for survival and adventure mode only"));
+                }
         }
     }
 
