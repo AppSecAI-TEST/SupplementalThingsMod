@@ -33,10 +33,6 @@ public class BlockExit extends BlockDirection {
         setLightLevel(10.0F);
     }
 
-    public void registerItemModel(ItemBlock itemBlock) {
-        SupplementalThings.proxy.registerItemRenderer(itemBlock, 0, this.name);
-    }
-
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         switch (state.getValue(FACING))
         {

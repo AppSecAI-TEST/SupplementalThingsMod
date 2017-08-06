@@ -1,29 +1,16 @@
 {
   "forge_marker": 1,
-    "variants": {
-      "normal": {
-        "model": "supplementalthings:Exit"
-      },
-      "inventory": {
-        "model": "supplementalthings:Exit",
-        "transform": "forge:default-block"
-      },
-      "facing": {
-        "north": {
-          "model": "supplementalthings:Exit"
-        },
-        "south": {
-          "model": "supplementalthings:Exit",
-          "y": 180
-        },
-        "west": {
-          "model": "supplementalthings:Exit",
-          "y": 270
-        },
-        "east": {
-          "model": "supplementalthings:Exit",
-          "y": 90
-        }
-      }
+  "defaults": {
+    "model": "supplementalthings:Exit"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "facing": {
+      "north": {},
+      "south": {"y": 180},
+      "west": {"y": 270},
+      "east": {"y": 90}
     }
   }
+}
