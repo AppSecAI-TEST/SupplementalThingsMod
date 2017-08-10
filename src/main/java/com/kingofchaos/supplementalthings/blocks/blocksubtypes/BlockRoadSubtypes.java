@@ -1,12 +1,15 @@
-package com.kingofchaos.supplementalthings.blocks;
+package com.kingofchaos.supplementalthings.blocks.blocksubtypes;
 
 import net.minecraft.util.IStringSerializable;
 
 public enum BlockRoadSubtypes implements IStringSerializable
 {
     ROAD(0, "road"),
-    SOLIDYELLOWLINE(1, "solidyellowline"),
-    DASHEDYELLOWLINE(2, "dashedyellowline");
+    DOUBLEYELLOWLINE(1, "doubleyellowline"),
+    DASHEDYELLOWLINE(2, "dashedyellowline"),
+    SOLIDWHITELINE(3, "solidwhiteline"),
+    DASHEDWHITELINE(4, "dashedwhiteline"),
+    SOLIDYELLOWLINE(5, "solidyellowline");
 
     public int getMetadata()
     {
@@ -38,16 +41,16 @@ public enum BlockRoadSubtypes implements IStringSerializable
     private final String name;
     private static final BlockRoadSubtypes[] META_LOOKUP = new BlockRoadSubtypes[values().length];
 
-    private BlockRoadSubtypes(int i_meta, String i_name)
+    BlockRoadSubtypes(int meta, String name)
     {
-        this.meta = i_meta;
-        this.name = i_name;
+        this.meta = meta;
+        this.name = name;
     }
 
     static
     {
-        for (BlockRoadSubtypes colour : values()) {
-            META_LOOKUP[colour.getMetadata()] = colour;
+        for (BlockRoadSubtypes variants : values()) {
+            META_LOOKUP[variants.getMetadata()] = variants;
         }
     }
 }

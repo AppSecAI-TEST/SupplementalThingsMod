@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "all": "supplementalthings:blocks/X-Block"
+      "all": "supplementalthings:block/X-Block"
     }
   },
   "variants": {

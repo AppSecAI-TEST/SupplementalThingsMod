@@ -8,11 +8,16 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ClientProxy extends CommonProxy {
-    public ClientProxy() {
+
+    public ClientProxy()
+    {
+
     }
 
     @SideOnly(Side.CLIENT)
-    public void registerItemRenderer(Item item, int meta, String id) {
+    public void registerItemRenderer(Item item, int meta, String id)
+    {
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(SupplementalThings.modid + ":" + id, "inventory"));
     }
+    
 }

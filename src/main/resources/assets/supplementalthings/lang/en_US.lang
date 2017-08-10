@@ -11,7 +11,13 @@ tile.totalblack.name=Total Black Block
 tile.extinguisher.name=Fire Extinguisher
 tile.road.name=Road
 tile.cement.name=Cement
-tile.road.dashedwhite.name:1=Dashed White Line Road
+
+#Road Variants
+tile.road.road.name=Road
+tile.road.doubleyellowline.name=Double Yellow Line Road
+tile.road.dashedyellowline.name=Dashed Yellow Line Road
+tile.road.solidwhiteline.name=Solid White Line Road
+tile.road.dashedwhiteline.name=Dashed White Line Road
 
 #Creative Tabs
 itemGroup.supplementalthings=Supplemental Things

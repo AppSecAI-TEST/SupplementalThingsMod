@@ -1,29 +1,24 @@
 {
   "forge_marker": 1,
+  "defaults": {
+    "model": "supplementalthings:Road"
+  },
   "variants": {
-    "normal": {
-      "model": "supplementalthings:Road"
+    "facing=north,variant=road": { "model": "supplementalthings:Road"},
+    "facing=east,variant=road": { "model": "supplementalthings:Road"},
+    "facing=south,variant=road": { "model": "supplementalthings:Road"},
+    "facing=west,variant=road": { "model": "supplementalthings:Road"},
+
+    "facing=north,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine"},
+    "facing=east,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine", "y": 90 },
+    "facing=south,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine"},
+    "facing=west,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine", "y": 90 },
+
+    "facing=north,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine"},
+    "facing=east,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine", "y": 90 },
+    "facing=south,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine"},
+    "facing=west,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine", "y": 90 }
     },
     "inventory": {
-      "model": "supplementalthings:Road",
-      "transform": "forge:default-block"
-    },
-    "facing": {
-      "north": {
-        "model": "supplementalthings:Road"
-      },
-      "south": {
-        "model": "supplementalthings:Road",
-        "y": 180
-      },
-      "west": {
-        "model": "supplementalthings:Road",
-        "y": 270
-      },
-      "east": {
-        "model": "supplementalthings:Road",
-        "y": 90
-      }
     }
-  }
 }

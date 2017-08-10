@@ -1,7 +1,7 @@
 {
     "textures": {
         "0": "blocks/iron_block",
-        "E": "supplementalthings:blocks/ExitSign"
+        "E": "supplementalthings:block/ExitSign"
     },
     "elements": [
         {
