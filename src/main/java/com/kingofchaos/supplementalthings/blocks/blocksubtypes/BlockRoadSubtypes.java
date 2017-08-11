@@ -7,9 +7,14 @@ public enum BlockRoadSubtypes implements IStringSerializable
     ROAD(0, "road"),
     DOUBLEYELLOWLINE(1, "doubleyellowline"),
     DASHEDYELLOWLINE(2, "dashedyellowline"),
-    SOLIDWHITELINE(3, "solidwhiteline"),
-    DASHEDWHITELINE(4, "dashedwhiteline"),
-    SOLIDYELLOWLINE(5, "solidyellowline");
+    DASHEDWHITELINE(3, "dashedwhiteline"),
+    SOLIDYELLOWLINE(4, "solidyellowline"),
+    SOLIDWHITELINE(5, "solidwhiteline"),
+    WHITETURNINGLINE(6, "whiteturningline"),
+    YELLOWTURNINGLINE(7, "yellowturningline"),
+    STANDARDCROSSWALKPART(8, "standardcrosswalk"),
+    CONTINENTALCROSSWALK(9, "continentalcrosswalk");
+
 
     public int getMetadata()
     {
