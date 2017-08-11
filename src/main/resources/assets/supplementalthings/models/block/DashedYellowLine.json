@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "supplementalthings:block/Road",
+        "down": "supplementalthings:block/Road",
+        "up": "supplementalthings:block/DashedYellowLine",
+        "east": "supplementalthings:block/Road",
+        "west": "supplementalthings:block/Road",
+        "north": "supplementalthings:block/Road",
+        "south": "supplementalthings:block/Road"
+    }
+}

@@ -14,6 +14,21 @@
     "facing=south,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine"},
     "facing=west,variant=solidwhiteline": { "model": "supplementalthings:SolidWhiteLine", "y": 90 },
 
+    "facing=north,variant=dashedwhiteline": { "model": "supplementalthings:DashedWhiteLine"},
+    "facing=east,variant=dashedwhiteline": { "model": "supplementalthings:DashedWhiteLine", "y": 90 },
+    "facing=south,variant=dashedwhiteline": { "model": "supplementalthings:DashedWhiteLine"},
+    "facing=west,variant=dashedwhiteline": { "model": "supplementalthings:DashedWhiteLine", "y": 90 },
+
+    "facing=north,variant=dashedyellowline": { "model": "supplementalthings:DashedYellowLine"},
+    "facing=east,variant=dashedyellowline": { "model": "supplementalthings:DashedYellowLine", "y": 90 },
+    "facing=south,variant=dashedyellowline": { "model": "supplementalthings:DashedYellowLine"},
+    "facing=west,variant=dashedyellowline": { "model": "supplementalthings:DashedYellowLine", "y": 90 },
+
+    "facing=north,variant=doubleyellowline": { "model": "supplementalthings:DoubleYellowLine"},
+    "facing=east,variant=doubleyellowline": { "model": "supplementalthings:DoubleYellowLine", "y": 90 },
+    "facing=south,variant=doubleyellowline": { "model": "supplementalthings:DoubleYellowLine"},
+    "facing=west,variant=doubleyellowline": { "model": "supplementalthings:DoubleYellowLine", "y": 90 },
+
     "facing=north,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine"},
     "facing=east,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine", "y": 90 },
     "facing=south,variant=solidyellowline": { "model": "supplementalthings:SolidYellowLine"},

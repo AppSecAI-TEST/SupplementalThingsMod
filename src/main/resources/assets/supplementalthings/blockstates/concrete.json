@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "supplementalthings:Concrete"
+  },
+  "variants": {
+    "facing=north,variant=concrete": { "model": "supplementalthings:Concrete"},
+    "facing=east,variant=concrete": { "model": "supplementalthings:Concrete"},
+    "facing=south,variant=concrete": { "model": "supplementalthings:Concrete"},
+    "facing=west,variant=concrete": { "model": "supplementalthings:Concrete"}
+    },
+    "inventory": {
+    }
+}
